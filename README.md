@@ -16,8 +16,8 @@ docker build -t camunda-svg-converter:latest .
 docker run -v <directory-with-xml>:/app camunda-svg-converter bpmn-to-image <input-file>:<output-file>
 ```
 
-Example to convert `diagram_1.xml` to `diagram_1.svg`
+Example to convert `diagram_1.bpmn` to `diagram_1.svg`
 
 ```
-docker run -v /tmp/test:/app camunda-svg-converter bpmn-to-image diagram_1.xml:diagram_1.svg
+docker run -v /tmp/test:/app camunda-svg-converter bpmn-to-image diagram_1.bpmn:diagram_1.svg
 ```
